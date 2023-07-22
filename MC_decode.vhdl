@@ -1,7 +1,7 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-entity 	Decode is
+entity 	DECODE is
 	port(
 
 		Inst : in std_logic_vector(7 downto 0);
@@ -10,7 +10,7 @@ entity 	Decode is
 	);
 end entity;
 
-architecture behavior of Decode is
+architecture behavior of DECODE is
 begin
 	S(10) <= (not(Inst(7)) and not(Inst(6)) and not(Inst(5)) and not(Inst(4)));
 	S(9)  <= (not(Inst(7)) and not(Inst(6)) and not(Inst(5)) and Inst(4));
