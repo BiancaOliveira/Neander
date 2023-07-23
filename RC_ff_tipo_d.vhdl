@@ -24,6 +24,6 @@ architecture behavior of ff_tipo_d is
 begin
 
     	notD <= not D;
-    	u0 : ffjk port map(D, notD, clk, pr, cl, Q, nQ);
+    	uffjk : ffjk port map(D, notD, clk, pr, cl, Q, nQ);
     	
 end architecture;

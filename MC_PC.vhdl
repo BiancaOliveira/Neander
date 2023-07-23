@@ -42,9 +42,9 @@ architecture behavior of PC is
 begin
 
 	
-	ADD  :  add_8  port map("00000001",sEnde, sADD);
-	MUX  : mux_2x8 port map(Barr,sADD,BarInc, sMux);
-	u1PC : registrador_8 port map(sMux, RW, clk, rst, sEnde);
+	uADD  :  add_8  port map("00000001",sEnde, sADD);
+	uMUX  : mux_2x8 port map(Barr,sADD,BarInc, sMux);
+	uuPC : registrador_8 port map(sMux, RW, clk, rst, sEnde);
 	Ende <= sEnde;
 
 

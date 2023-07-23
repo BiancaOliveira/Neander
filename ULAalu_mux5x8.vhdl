@@ -16,6 +16,6 @@ end entity;
 architecture behavior of mux5x8 is
 begin
 
-	S <= SLAD when ULAop = "000" else SADD when ULAop = "001" else SOR when ULAop = "010" else SAND when ULAop = "011" else SNOT when ULAop = "100" else "00000000" ;
-
+	S <= SLAD when ULAop = "000" else SADD when ULAop = "001" else SOR when ULAop = "010" else SAND when ULAop = "011" else SNOT when ULAop = "100" else (others => 'Z');
+ 
 end architecture;

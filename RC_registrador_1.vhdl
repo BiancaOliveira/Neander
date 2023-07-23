@@ -28,8 +28,8 @@ architecture behavior of registrador_1 is
 	signal sMux, sQ, snQ : std_logic;
 begin
 
-    	u0 : mux_2x1  port map(sQ, D0, RW, sMux);
-    	u1 : ff_tipo_d port map(sMux, clk, pr, cl, sQ, snQ);
+    	umux : mux_2x1  port map(sQ, D0, RW, sMux);
+    	uffd : ff_tipo_d port map(sMux, clk, pr, cl, sQ, snQ);
     	S <= sQ;
 
 end architecture;

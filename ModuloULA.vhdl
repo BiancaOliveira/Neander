@@ -46,8 +46,8 @@ begin
 
 	Barramento <= sAC when MEM_nrw='1' else (others => 'Z');
 	
-	u0AC : registrador_8 port map(sUla, AC_nrw, clk, rst, sAC);
-	u1   : alu port map(sAC, Barramento, Ula_op, sUla_NZ, sUla);
-	u2   : flags port map(sUla_NZ, AC_nrw, clk, rst, Flags_nz);
+	uAC : registrador_8 port map(sUla, AC_nrw, clk, rst, sAC);
+	ualu   : alu port map(sAC, Barramento, Ula_op, sUla_NZ, sUla);
+	uflags   : flags port map(sUla_NZ, AC_nrw, clk, rst, Flags_nz);
 	
 end architecture;

@@ -62,12 +62,12 @@ architecture behavior of alu is
 	signal sSNOT, sSAND, sSOR, sSADD, sS : std_logic_vector(7 downto 0);
 begin
 
-	u0 : not_8 port map(X,sSNOT);
-	u1 : and_8 port map(X,Y, sSAND);
-	u2 : or_8  port map(X,Y, sSOR);
-	u3 : add_8  port map(X,Y, sSADD);
-	u4 : mux5x8 port map(Y, sSADD, sSOR, sSAND, sSNOT,ULAop,sS);
-	u5 : detector_NZ port map(sS,NZ);
+	unot : not_8 port map(X,sSNOT);
+	uand : and_8 port map(X,Y, sSAND);
+	uor : or_8  port map(X,Y, sSOR);
+	uadd : add_8  port map(X,Y, sSADD);
+	umux : mux5x8 port map(Y, sSADD, sSOR, sSAND, sSNOT,ULAop,sS);
+	udetector : detector_NZ port map(sS,NZ);
 	S <= sS;
 	
 end architecture;
