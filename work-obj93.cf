@@ -1,0 +1,115 @@
+v 4
+file . "ULA_flags.vhdl" "bcc870950fd3138774dfd156a84d2242b9320bb9" "20230723171720.121":
+  entity flags at 1( 0) + 0 on 237;
+  architecture behavior of flags at 12( 235) + 0 on 238;
+file . "ULA_alu.vhdl" "81c2b0a8b1032cbf379838e20c7d494b475dbaee" "20230723171720.120":
+  entity alu at 1( 0) + 0 on 235;
+  architecture behavior of alu at 13( 257) + 0 on 236;
+file . "ULAalu_or_8.vhdl" "3e1bf5c4327d656e45c3d1225366d784f32f6144" "20230723171720.119":
+  entity or_8 at 1( 0) + 0 on 233;
+  architecture behavior of or_8 at 11( 167) + 0 on 234;
+file . "ULAalu_not_8.vhdl" "cc2756688803d9ec23280956c0a0c74f8730a371" "20230723171720.119":
+  entity not_8 at 1( 0) + 0 on 231;
+  architecture behavior of not_8 at 11( 164) + 0 on 232;
+file . "ULAalu_mux5x8.vhdl" "d0aa518884036ca3effc3110a07ad01c093b8428" "20230723171720.118":
+  entity mux5x8 at 1( 0) + 0 on 229;
+  architecture behavior of mux5x8 at 16( 399) + 0 on 230;
+file . "ULAalu_detector_NZ.vhdl" "4727645b7bae93a640c918108f0f03aaffd29b2c" "20230723171720.117":
+  entity detector_nz at 1( 0) + 0 on 227;
+  architecture behavior of detector_nz at 11( 172) + 0 on 228;
+file . "ULAalu_and_8.vhdl" "dcd3bf750044e9747802d5b5ecebac6b2e3d385c" "20230723171720.116":
+  entity and_8 at 1( 0) + 0 on 225;
+  architecture behavior of and_8 at 11( 170) + 0 on 226;
+file . "ULAalu_add_8.vhdl" "2862f0980b06680e7a91c086da08a9fd99617739" "20230723171720.116":
+  entity add_8 at 1( 0) + 0 on 223;
+  architecture behavior of add_8 at 11( 169) + 0 on 224;
+file . "ULAalu_add_1.vhdl" "a0202357b3477be6874f03e49ee034ca6a0ed33b" "20230723171720.115":
+  entity add_1 at 1( 0) + 0 on 221;
+  architecture behavior of add_1 at 11( 142) + 0 on 222;
+file . "UC.vhdl" "872e26b277cef2f067bfc889db844e5623d0c55d" "20230723171720.113":
+  entity uc at 1( 0) + 0 on 219;
+  architecture behavior of uc at 13( 259) + 0 on 220;
+file . "UC_sta.vhdl" "d32307d9727c0d7b2b7e9f9241821bb8bf9deecb" "20230723171720.112":
+  entity sta_uc at 1( 0) + 0 on 217;
+  architecture behavior of sta_uc at 13( 253) + 0 on 218;
+file . "UC_or.vhdl" "4bd0d82dd3c1076f8954540bef6906d344d3ba94" "20230723171720.111":
+  entity or_uc at 1( 0) + 0 on 215;
+  architecture behavior of or_uc at 13( 252) + 0 on 216;
+file . "UC_not.vhdl" "9eda9514fc39d703dbafd26db2ff4590f18677af" "20230723171720.110":
+  entity not_uc at 1( 0) + 0 on 213;
+  architecture behavior of not_uc at 13( 253) + 0 on 214;
+file . "UC_nop.vhdl" "882572f5026c1dc5f259a8a021b2346841eed7cd" "20230723171720.109":
+  entity nop_uc at 1( 0) + 0 on 211;
+  architecture behavior of nop_uc at 13( 253) + 0 on 212;
+file . "UC_mux11x11.vhdl" "0ae749193b1b53fec6b3044515474096c49f4840" "20230723171720.108":
+  entity mux11x11 at 1( 0) + 0 on 209;
+  architecture behavior of mux11x11 at 22( 678) + 0 on 210;
+file . "UC_lda.vhdl" "82f1117853758d3be74aa7d0a4b700aa41d347f1" "20230723171720.108":
+  entity lda_uc at 1( 0) + 0 on 207;
+  architecture behavior of lda_uc at 13( 253) + 0 on 208;
+file . "UC_jz.vhdl" "5884387ee7f18658cefec8d5d68d3f2ef084546f" "20230723171720.107":
+  entity jz_uc at 1( 0) + 0 on 205;
+  architecture behavior of jz_uc at 14( 276) + 0 on 206;
+file . "UC_jn.vhdl" "7657bb41ff0496c9a46a3290c8a8e26c784de603" "20230723171720.106":
+  entity jn_uc at 1( 0) + 0 on 203;
+  architecture behavior of jn_uc at 14( 276) + 0 on 204;
+file . "UC_jmp.vhdl" "8e28544daea73eff2b9c9e695c68d88eed093012" "20230723171720.105":
+  entity jmp_uc at 1( 0) + 0 on 201;
+  architecture behavior of jmp_uc at 13( 253) + 0 on 202;
+file . "UC_hlt.vhdl" "65b6c1f1575bd32a3799611f9302c987f00fab2f" "20230723171720.104":
+  entity hlt_uc at 1( 0) + 0 on 199;
+  architecture behavior of hlt_uc at 13( 253) + 0 on 200;
+file . "UC_Cont_ctl.vhdl" "a990cbe1ba25dbd166f83f12d982667311265d6f" "20230723171720.104":
+  entity ctrl at 1( 0) + 0 on 197;
+  architecture behavior of ctrl at 12( 204) + 0 on 198;
+file . "UC_contador.vhdl" "d9d78f0ba72460e78b7770eb1754570c1adca279" "20230723171720.103":
+  entity contador at 1( 0) + 0 on 195;
+  architecture behavior of contador at 12( 177) + 0 on 196;
+file . "UC_and.vhdl" "8e7d5edc618512092d6f7cee7c5828e7ede7079d" "20230723171720.102":
+  entity and_uc at 1( 0) + 0 on 193;
+  architecture behavior of and_uc at 13( 253) + 0 on 194;
+file . "UC_add.vhdl" "d5d2f5b6c3edf51852e32e7a471b92357ef900df" "20230723171720.101":
+  entity add_uc at 1( 0) + 0 on 191;
+  architecture behavior of add_uc at 13( 253) + 0 on 192;
+file . "tb_neander.vhdl" "908b2a68a404d815d0b1d1699bafd1bd4cc2a4cb" "20230723171720.099":
+  entity tb_neander at 1( 0) + 0 on 189;
+  architecture contador of tb_neander at 8( 79) + 0 on 190;
+file . "RC_Registrador_8.vhdl" "c7c76520f44473cce28ed09a6144cf197f3ddb10" "20230723171720.098":
+  entity registrador_8 at 1( 0) + 0 on 187;
+  architecture behavior of registrador_8 at 12( 243) + 0 on 188;
+file . "RC_registrador_1.vhdl" "fc7401c82a0542bc2ac428740877cdb38444ff53" "20230723171720.097":
+  entity registrador_1 at 1( 0) + 0 on 185;
+  architecture behavior of registrador_1 at 11( 195) + 0 on 186;
+file . "RC_ff_tipo_d.vhdl" "a454018ed87a22cb22e71ddefbe56528bb6b83eb" "20230723171720.096":
+  entity ff_tipo_d at 1( 0) + 0 on 183;
+  architecture behavior of ff_tipo_d at 12( 168) + 0 on 184;
+file . "RC_ffJK.vhdl" "d40abead66326720ee91c68b596207e650ad8227" "20230723171720.096":
+  entity ffjk at 1( 0) + 0 on 181;
+  architecture behavior of ffjk at 13( 246) + 0 on 182;
+file . "NEANDER.vhdl" "d04db8be672606d2b6864d7ededb89869b31dfba" "20230723171720.095":
+  entity neander at 1( 0) + 0 on 179;
+  architecture behavior of neander at 11( 119) + 0 on 180;
+file . "ModuloULA.vhdl" "81c0954ea045cf627382cacd2abfb51c1c64f2e5" "20230723171720.094":
+  entity ula at 1( 0) + 0 on 177;
+  architecture behavior of ula at 15( 331) + 0 on 178;
+file . "ModuloUC.vhdl" "03ae09dcdd1340e81f046478b642405320b2e97a" "20230723171720.094":
+  entity controle at 1( 0) + 0 on 175;
+  architecture behavior of controle at 14( 306) + 0 on 176;
+file . "ModuloPC.vhdl" "0663a114fe599cb6fd46557d6a94934fb635744e" "20230723171720.093":
+  entity pc at 1( 0) + 0 on 173;
+  architecture behavior of pc at 14( 265) + 0 on 174;
+file . "ModuloMEM.vhdl" "a916893ccb6396fe26062c6a4a7c546f8136c044" "20230723171720.093":
+  entity mem at 1( 0) + 0 on 171;
+  architecture behavior of mem at 17( 401) + 0 on 172;
+file . "MEMmux_mux2x1.vhdl" "5a4798b63cb85131e00f40cf6cbe4c1f06152702" "20230723171720.092":
+  entity mux_2x1 at 1( 0) + 0 on 169;
+  architecture behavior of mux_2x1 at 11( 176) + 0 on 170;
+file . "MEM_mux2x8.vhdl" "ab55e3b74a69a7a21849367c749fb738f3e811ce" "20230723171720.092":
+  entity mux_2x8 at 1( 0) + 0 on 167;
+  architecture behavior of mux_2x8 at 12( 241) + 0 on 168;
+file . "MC_decode.vhdl" "a417a3ac101f032dbd2d31626fa69c3949b9d8ff" "20230723171720.092":
+  entity decode at 1( 0) + 0 on 165;
+  architecture behavior of decode at 13( 237) + 0 on 166;
+file . "as_ram.vhdl" "1b06709c1662ca8e10214a3044d37c69a40e5344" "20230723171720.091":
+  entity as_ram at 2( 42) + 0 on 163;
+  architecture behavior of as_ram at 16( 325) + 0 on 164;

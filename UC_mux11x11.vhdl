@@ -3,17 +3,17 @@ use ieee.std_logic_1164.all;
 
 entity mux11x11 is
 	port(
-		SHLT  : in  std_logic_vector(7 downto 0);
-		SJZ   : in  std_logic_vector(7 downto 0);
-		SJN   : in  std_logic_vector(7 downto 0);
-		SJMP  : in  std_logic_vector(7 downto 0);
-		SNOT  : in  std_logic_vector(7 downto 0);
-		SOR   : in  std_logic_vector(7 downto 0);
-		SAND  : in  std_logic_vector(7 downto 0);
-		SADD  : in  std_logic_vector(7 downto 0);
-		SLDA  : in  std_logic_vector(7 downto 0);
-		SSTA  : in  std_logic_vector(7 downto 0);
-		SNOP : in  std_logic_vector(7 downto 0);
+		SHLT  : in  std_logic_vector(10 downto 0);
+		SJZ   : in  std_logic_vector(10 downto 0);
+		SJN   : in  std_logic_vector(10 downto 0);
+		SJMP  : in  std_logic_vector(10 downto 0);
+		SNOT  : in  std_logic_vector(10 downto 0);
+		SOR   : in  std_logic_vector(10 downto 0);
+		SAND  : in  std_logic_vector(10 downto 0);
+		SADD  : in  std_logic_vector(10 downto 0);
+		SLDA  : in  std_logic_vector(10 downto 0);
+		SSTA  : in  std_logic_vector(10 downto 0);
+		SNOP  : in  std_logic_vector(10 downto 0);
 		ULAop : in  std_logic_vector(10 downto 0);
 		S     : out std_logic_vector(10 downto 0)   
     	);
