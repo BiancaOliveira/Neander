@@ -13,9 +13,9 @@ end entity;
 
 architecture behavior of jz_uc is
 begin
-	u : process (Z)
+	u : process (Z, Ciclo)
 	begin
-		if Z = '1' then
+		if (Z = '1') then
 			S(10) <= not(Ciclo(2)) or Ciclo(1) or not(Ciclo(0)); -- barr/inc
 			S(9)  <= '1'; --barr/PC
 			S(8)  <= '0';-- ULAop[8-6]
@@ -27,7 +27,9 @@ begin
 			S(2)  <= (not(Ciclo(2)) and not(Ciclo(1))  and not(Ciclo(0))) or (not(Ciclo(2)) and Ciclo(1) and Ciclo(0)); --REM_rw
 			S(1)  <= not(Ciclo(1)) and (Ciclo(2) xor Ciclo(0));  --RDM_rw
 			S(0)  <= not(Ciclo(2)) and Ciclo(1) and not(Ciclo(0)); --RI_rw
+
 		else
+		
 			S(10) <= '1'; -- barr/inc
 			S(9)  <= '1'; --barr/PC
 			S(8)  <= '0';-- ULAop[8-6]
@@ -38,7 +40,8 @@ begin
 			S(3)  <= '0'; --MEM_rw
 			S(2)  <= not(Ciclo(1)) and not(Ciclo(2)) and not(Ciclo(0)); --REM_rw
 			S(1)  <= not(Ciclo(1)) and not(Ciclo(2)) and Ciclo(0);--RDM_rw
-			S(0)  <= not(Ciclo(2)) and Ciclo(1) and not(Ciclo(0)); --RI_rw
+			S(0)  <= not(Ciclo(2)) and Ciclo(1) and not(Ciclo(0)); --RI_rw	
+			
 		end if;
 	end process;
 end architecture;

@@ -14,7 +14,7 @@ architecture behavior of not_uc is
 begin
 	S(10) <= '1'; -- barr/inc
 	S(9)  <= '1'; --barr/PC
-	S(8)  <= '0';-- ULAop[8-6]
+	S(8)  <= '1';-- ULAop[8-6]
 	S(7)  <= '0';
 	S(6)  <= '0';
 	S(5)  <= not(Ciclo(1)) and not(Ciclo(2)) and Ciclo(0); -- PC_rw

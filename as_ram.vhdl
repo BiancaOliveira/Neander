@@ -21,7 +21,7 @@ begin
 	
 	rampW : process(notrw, reset, addr, data)
 	type binary_file is file of character;
-	file load_file : binary_file open read_mode is "2teste.MEM";
+	file load_file : binary_file open read_mode is "neanderram.mem";
 	variable char : character;
 	begin
 		if (reset = '0' and reset'event) then
