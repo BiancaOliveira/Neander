@@ -3,7 +3,7 @@
 ## Descrição do projeto 
 
 <p align="justify">
-Computador teórico Neander, voltado para o ensino de conceitos introdutórios de Organização e Arquitetura de Computadore
+Computador teórico Neander, voltado para o ensino de conceitos introdutórios de Organização e Arquitetura de Computadores
 
 ### Principais Características
 - Largura de dados e de endereços de 8 bits
